@@ -1,0 +1,35 @@
+# Lab 21 — LoRA Fine-tuning Dependencies
+# Pinned versions for reproducibility
+# Install: pip install -r requirements.txt
+
+# Core ML
+torch>=2.1.0
+transformers>=4.46.0,<5.6.0
+accelerate>=0.26.0
+
+# Fine-tuning
+trl>=0.12.0,<0.16.0
+peft>=0.8.0
+bitsandbytes>=0.41.0
+
+# Unsloth (install separately from git for latest CUDA kernels)
+# pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+
+# Data
+datasets>=2.16.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optional: W&B tracking (Stretch Goal 4)
+# wandb>=0.16.0
+
+# Optional: GGUF export
+# gguf>=0.5.0
+# llama-cpp-python>=0.2.0
+
+# HuggingFace Hub (for Option B)
+huggingface_hub>=0.20.0

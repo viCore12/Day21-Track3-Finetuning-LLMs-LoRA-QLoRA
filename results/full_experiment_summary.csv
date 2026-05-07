@@ -1,0 +1,7 @@
+experiment,rank,alpha,target_modules,use_dora,trainable_params,train_time_min,peak_vram_gb,eval_loss,eval_perplexity
+base_model,-,-,-,False,0,0.0,-,1.8840053141117097,6.579806345385864
+lora_r8,8,16,"q,v",False,1843200,4.05,7.22,1.5577,4.748
+lora_r16,16,32,"q,v",False,3686400,4.24,6.62,1.5161,4.554
+lora_r64,64,128,"q,v",False,14745600,4.04,8.0,1.4768,4.379
+lora_r16_all_layers,16,32,"q,k,v,o,gate,up,down",False,29933568,5.24,10.59,1.4948,4.459
+dora_r16,16,32,"q,v",True,3769344,4.75,11.53,1.5162,4.555
